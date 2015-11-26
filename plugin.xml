@@ -1,0 +1,18 @@
+<library path="src">
+    <class name="EasyTFBroadcaster"
+           type="tf_broadcaster.tf_broadcaster.TFBroadcaster"
+           base_class_type="rqt_gui_py::Plugin">
+        <description>
+            GUI for broadcasting TF.
+        </description>
+        <qtgui>
+            <group>
+                <label>My rqt</label>
+                <icon type="theme">folder</icon>
+            </group>
+            <label>Easy TF broadcaster</label>
+            <icon type="theme">system-search</icon>
+            <statustip>GUI for broadcasting TF.</statustip>
+        </qtgui>
+    </class>
+</library>
