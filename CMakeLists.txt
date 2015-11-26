@@ -6,7 +6,6 @@ project(ez_tf_broadcaster)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
-  common
   python_qt_binding
   roscpp
   rospy
