@@ -7,7 +7,7 @@
         </description>
         <qtgui>
             <group>
-                <label>My rqt</label>
+                <label>My Tools</label>
                 <icon type="theme">folder</icon>
             </group>
             <label>Easy TF broadcaster</label>

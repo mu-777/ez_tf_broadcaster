@@ -6,7 +6,7 @@ import os, time
 
 from python_qt_binding import loadUi
 from python_qt_binding.QtCore import Qt, QTimer, Signal, Slot
-from python_qt_binding.QtGui import QWidget
+from python_qt_binding.QtWidgets import QWidget
 import rospkg
 import rospy
 from rospy.exceptions import ROSException
@@ -26,7 +26,7 @@ class TFBroadcasterWidget(QWidget):
     def __init__(self, widget):
         super(TFBroadcasterWidget, self).__init__()
         rospkg_pack = rospkg.RosPack()
-        ui_file = os.path.join(rospkg_pack.get_path('gui_nodes'), 'resource', 'TFBroadcaster.ui')
+        ui_file = os.path.join(rospkg_pack.get_path('ez_tf_broadcaster'), 'resource', 'TFBroadcaster.ui')
         loadUi(ui_file, self)
 
         self._frame_id, self._child_frame_id = FRAME_ID, CHILD_FRAME_ID
